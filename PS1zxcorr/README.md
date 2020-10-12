@@ -11,14 +11,19 @@ That code use python2.
 It is necessary you have healpy (>=1.13), astropy (>=2.0.16), wheel, six python packages. Also, it is necessary you to install casjobs and mastcasjobs packages, both with 0.0.1 version. For these one, follow the steps below:
 
 $ git clone http://github.com/rlwastro/mastcasjobs.git
+
 $ pip install git+git://github.com/dfm/casjobs@master
+
 $ cd mastcasjobs
+
 $ git checkout 3c27f7ff7aff933694058b5204abd72527115244
+
 $ python setup.py install --user
 
 Check if you installed right. 
 
 $ pip show casjobs
+
 $ pip show mastcasjobs
 
 It should show you that version is 0.0.1.
