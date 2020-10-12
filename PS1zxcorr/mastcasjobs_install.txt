@@ -1,0 +1,6 @@
+git clone http://github.com/rlwastro/mastcasjobs.git
+pip install git+git://github.com/dfm/casjobs@master
+cd mastcasjobs
+git checkout 3c27f7ff7aff933694058b5204abd72527115244
+python setup.py install --user
+
