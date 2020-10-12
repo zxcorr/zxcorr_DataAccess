@@ -1,11 +1,9 @@
-############################################################################################################
- This code was created by Alessandro Marins (University of Sao Paulo) and Filipe Abdalla (University College London) 
- and is owned by BINGO Telescope
+ # This code was created by Alessandro Marins (University of Sao Paulo) and Filipe Abdalla (University College London) 
+ # and is owned by BINGO Telescope
 
- Its use is to extract optical data from Pan-STARRS1 telescope
+ # Its use is to extract optical data from Pan-STARRS1 telescope
 
- Any question about your operation, please, contact me in alessandro.marins@usp.br
-#############################################################################################################
+ # Any question about your operation, please, contact me in alessandro.marins@usp.br
 
 ## INSTALL
 That code use python2.
@@ -25,30 +23,13 @@ Check if you installed right.
 
 It should show you that version is 0.0.1.
 
-
-# hwjobs.py
-It is used in SPLINTER (UCL cluster) and it show jobs running with your username. To run just write in shell, for example
-
-  python hwjobs.py --show True --user amarins
-
-
-# listepixs.py
-This code list the pixels do not download in a pixel range at a specific nside (standard: 64). To use it just write, for example:
-
-  python listepixs.py --nside 1024 --spix 0 --epix 1000
-
-
-
-There are two groups of codes that are differents for how will download fits file: with "_pixels_" word and without it. The codes with that one work separate the total sky range in (almost) equal number of pixels called "part". The group without that word work for each pixel, the user should give which pixels it want to download.
-
-
-# Personal Computer
+## Personal Computer
 If you want only running the code in your personal computer you should do not worry with "PS1_" codes, that are by cluster running. Just choose between "part" or "pixels" method, adaptaded it in ".ini" file and run the "run_" respectively code (ps: all variables in "ini" file can be change on terminal). For example, running "pixel" method:
 
   python run_pixels_PS1zxcorr.py 
 
 
-# Cluster Computer
+## Cluster Computer
 Here there are some codes for SPLINTER cluster (UCL's cluster). PS1_create_pixels_sbatch.py and PS1_create_sbatch.py codes will create the jobs files in another directory (sbatch_pixels_files and sbatch_files, respectively. If these one not exist, it will create.). The ".sh" files will be identified by your pixels or part number. You should put which pixel range you want. For example:
 
   python PS1_create_pixels_sbatch.py --nside 64 --spix 0 --epix 10000
@@ -78,3 +59,18 @@ In that, you can run one job and set N jobs on hold. For example, assume that th
 
 You can also want to check your jobs that are running. For that you can use hwjobs.py code.
 
+
+## hwjobs.py
+It is used in SPLINTER (UCL cluster) and it show jobs running with your username. To run just write in shell, for example
+
+  python hwjobs.py --show True --user amarins
+
+
+## listepixs.py
+This code list the pixels do not download in a pixel range at a specific nside (standard: 64). To use it just write, for example:
+
+  python listepixs.py --nside 1024 --spix 0 --epix 1000
+
+
+
+There are two groups of codes that are differents for how will download fits file: with "_pixels_" word and without it. The codes with that one work separate the total sky range in (almost) equal number of pixels called "part". The group without that word work for each pixel, the user should give which pixels it want to download.
