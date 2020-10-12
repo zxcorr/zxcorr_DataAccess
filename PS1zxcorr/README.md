@@ -1,9 +1,9 @@
- # This code was created by Alessandro Marins (University of Sao Paulo) and Filipe Abdalla (University College London) 
- # and is owned by BINGO Telescope
+ ### This code was created by Alessandro Marins (University of Sao Paulo) and Filipe Abdalla (University College London) 
+ ### and is owned by BINGO Telescope
 
- # Its use is to extract optical data from Pan-STARRS1 telescope
+ ### Its use is to extract optical data from Pan-STARRS1 telescope
 
- # Any question about your operation, please, contact me in alessandro.marins@usp.br
+ ### Any question about your operation, please, contact me in alessandro.marins@usp.br
 
 ## INSTALL
 That code use python2.
